@@ -176,9 +176,6 @@ jobs:
   build-windows:
     name: Build Windows
     needs: prepare-matrices
-    if: |
-      needs.prepare-matrices.outputs.windows_matrix != '[]' &&
-      !startsWith(github.ref, 'refs/tags/') && github.ref != 'refs/heads/main'
     runs-on: windows-latest
     steps:
       - name: Checkout repository
