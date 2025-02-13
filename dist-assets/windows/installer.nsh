@@ -685,10 +685,10 @@
 
 	Push $0
 
-	${IfNot} ${AtLeastWin10}
-		MessageBox MB_ICONSTOP|MB_TOPMOST|MB_OK "Windows versions below 10 are unsupported. The last version to support Windows 7 and 8/8.1 is 2021.6."
-		Abort
-	${EndIf}
+	#${IfNot} ${AtLeastWin10}
+	#	MessageBox MB_ICONSTOP|MB_TOPMOST|MB_OK "Windows versions below 10 are unsupported. The last version to support Windows 7 and 8/8.1 is 2021.6."
+	#	Abort
+	#${EndIf}
 
 	Var /GLOBAL NativeTarget
 	${If} ${IsNativeAMD64}
