@@ -8,8 +8,6 @@
 ---
 name: Desktop - End-to-end tests
 on:
-  schedule:
-    - cron: '0 0 * * *'
   workflow_dispatch:
     inputs:
       oses:
